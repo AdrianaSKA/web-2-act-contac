@@ -1,0 +1,83 @@
+<section class="about-tabs">
+    <div class="container">
+        <div class="tab-buttons">
+            <button [class.active]="activeTab === 'history'" (click)="setActiveTab('history')">
+                Nuestra Historia
+            </button>
+            <button [class.active]="activeTab === 'philosophy'" (click)="setActiveTab('philosophy')">
+                Filosofía
+            </button>
+            <button [class.active]="activeTab === 'team'" (click)="setActiveTab('team')">
+                Nuestro Equipo
+            </button>
+        </div>
+
+        <div class="tab-content">
+            @if (activeTab === 'history') {
+            <div class="history-content">
+                <div class="text-content">
+                    <h2>De pequeño taller a referencia en diseño floral</h2>
+                    <p>Todo comenzó en un pequeño local en el centro de la ciudad, donde nuestro fundador, Joel
+                        Lopez, empezó a crear arreglos florales para amigos y familiares. Su atención al detalle y
+                        sensibilidad artística pronto ganaron reconocimiento.</p>
+                    <p>En 2015, expandimos nuestro taller y añadimos nuevos talentos al equipo. Hoy contamos con un
+                        estudio de diseño de 300m² y servimos a clientes en toda la región.</p>
+                    <p>Hemos tenido el honor de crear arreglos para bodas de alto perfil, eventos corporativos y
+                        ocasiones especiales que marcan la diferencia en la vida de las personas.</p>
+                </div>
+                <div class="image-content">
+                    <img src="https://images.unsplash.com/photo-1459156212016-c812468e2115" alt="Nuestro taller">
+                </div>
+            </div>
+            }
+
+            @if (activeTab === 'philosophy') {
+            <div class="philosophy-content">
+                <div class="philosophy-card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Sostenibilidad</h3>
+                    <p>Trabajamos con proveedores locales que practican agricultura sostenible. El 85% de nuestras
+                        flores provienen de cultivos responsables.</p>
+                </div>
+                <div class="philosophy-card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Pasión</h3>
+                    <p>Cada arreglo es creado con dedicación y amor por el arte floral. Nos apasiona crear belleza que
+                        emocione.</p>
+                </div>
+                <div class="philosophy-card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Excelencia</h3>
+                    <p>No comprometemos la calidad. Desde la selección de flores hasta el empaque final, cada detalle
+                        cuenta.</p>
+                </div>
+            </div>
+            }
+
+            @if (activeTab === 'team') {
+            <div class="team-content">
+                <div class="team-grid">
+                    @for (member of teamMembers; track member.name) {
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img [src]="member.image" alt="{{member.name}}">
+                        </div>
+                        <div class="team-info">
+                            <h3>{{member.name}}</h3>
+                            <p class="role">{{member.role}}</p>
+                            <p class="bio">{{member.bio}}</p>
+                        </div>
+                    </div>
+                    }
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</section>

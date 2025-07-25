@@ -1,0 +1,214 @@
+[
+    {
+        "id": 1,
+        "name": "Ramo Primavera",
+        "price": 45.99,
+        "description": "Frescas flores de temporada en un arreglo vibrante con margaritas, girasoles y rosas pequeñas",
+        "image": "https://images.unsplash.com/photo-1490750967868-88aa4486c946",
+        "category": "clasicos",
+        "featured": true,
+        "colors": [
+            "amarillo",
+            "blanco",
+            "rosa"
+        ],
+        "size": "mediano",
+        "stock": 15,
+        "delivery": true,
+        "rating": 4.8
+    },
+    {
+        "id": 2,
+        "name": "Elegancia Blanca",
+        "price": 89.99,
+        "description": "Exquisito arreglo con rosas blancas premium, lilas y eucalipto",
+        "image": "https://images.unsplash.com/photo-1466692476868-aef1dfb1e735",
+        "category": "bodas",
+        "featured": true,
+        "colors": [
+            "blanco",
+            "lila"
+        ],
+        "size": "grande",
+        "stock": 8,
+        "delivery": true,
+        "rating": 4.9
+    },
+    {
+        "id": 3,
+        "name": "Jardín Encantado",
+        "price": 65.50,
+        "description": "Mezcla exuberante de flores de jardín con peonías, rosas inglesas y lavanda",
+        "image": "https://images.unsplash.com/photo-1519378058457-4c29a0a2efac",
+        "category": "exclusivos",
+        "featured": false,
+        "colors": [
+            "rosa",
+            "morado",
+            "blanco"
+        ],
+        "size": "grande",
+        "stock": 5,
+        "delivery": true,
+        "rating": 4.7
+    },
+    {
+        "id": 4,
+        "name": "Minimalista Moderno",
+        "price": 39.99,
+        "description": "Diseño limpio con flores selectas en tonos neutros, perfecto para oficinas",
+        "image": "https://images.unsplash.com/photo-1453904300235-0f2f60b15b5d",
+        "category": "modernos",
+        "featured": false,
+        "colors": [
+            "blanco",
+            "verde"
+        ],
+        "size": "pequeño",
+        "stock": 12,
+        "delivery": true,
+        "rating": 4.5
+    },
+    {
+        "id": 5,
+        "name": "Lujo Dorado",
+        "price": 120.00,
+        "description": "Rosas premium con detalles dorados y follaje oscuro para ocasiones especiales",
+        "image": "https://images.unsplash.com/photo-1664214407864-dd7516c93ace?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "category": "exclusivos",
+        "featured": true,
+        "colors": [
+            "rojo",
+            "dorado",
+            "negro"
+        ],
+        "size": "grande",
+        "stock": 3,
+        "delivery": true,
+        "rating": 5.0
+    },
+    {
+        "id": 6,
+        "name": "Campo Fresco",
+        "price": 49.99,
+        "description": "Flores silvestres en un diseño natural que evoca los campos en primavera",
+        "image": "https://images.unsplash.com/photo-1490750967868-88aa4486c946",
+        "category": "clasicos",
+        "featured": false,
+        "colors": [
+            "multicolor"
+        ],
+        "size": "mediano",
+        "stock": 18,
+        "delivery": true,
+        "rating": 4.6
+    },
+    {
+        "id": 7,
+        "name": "Rosas Eternas",
+        "price": 75.00,
+        "description": "Rosas preservadas que duran hasta 3 años, disponibles en varios colores",
+        "image": "https://images.unsplash.com/photo-1559563362-c667ba5f5480",
+        "category": "exclusivos",
+        "featured": true,
+        "colors": [
+            "rojo",
+            "blanco",
+            "rosa",
+            "azul"
+        ],
+        "size": "mediano",
+        "stock": 7,
+        "delivery": true,
+        "rating": 4.9
+    },
+    {
+        "id": 8,
+        "name": "Tropical Vibrante",
+        "price": 68.50,
+        "description": "Combinación exótica con aves del paraíso, heliconias y follaje tropical",
+        "image": "https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "category": "tropicales",
+        "featured": false,
+        "colors": [
+            "naranja",
+            "amarillo",
+            "rojo"
+        ],
+        "size": "grande",
+        "stock": 4,
+        "delivery": true,
+        "rating": 4.4
+    },
+    {
+        "id": 9,
+        "name": "Clásico Romántico",
+        "price": 55.00,
+        "description": "Rosas rojas tradicionales con gypsophila en un diseño atemporal",
+        "image": "https://images.unsplash.com/photo-1526397751294-331021109fbd",
+        "category": "clasicos",
+        "featured": true,
+        "colors": [
+            "rojo",
+            "blanco"
+        ],
+        "size": "mediano",
+        "stock": 10,
+        "delivery": true,
+        "rating": 4.7
+    },
+    {
+        "id": 10,
+        "name": "Minimal Orchid",
+        "price": 59.99,
+        "description": "Elegante orquídea phalaenopsis en maceta de cerámica moderna",
+        "image": "https://images.unsplash.com/photo-1453904300235-0f2f60b15b5d",
+        "category": "modernos",
+        "featured": false,
+        "colors": [
+            "blanco",
+            "rosa",
+            "morado"
+        ],
+        "size": "pequeño",
+        "stock": 6,
+        "delivery": true,
+        "rating": 4.8
+    },
+    {
+        "id": 11,
+        "name": "Amanecer Primaveral",
+        "price": 72.00,
+        "description": "Tonos cálidos de amanecer con rosas coral, tulipanes y ranúnculos",
+        "image": "https://images.unsplash.com/photo-1459156212016-c812468e2115",
+        "category": "modernos",
+        "featured": true,
+        "colors": [
+            "coral",
+            "melocotón",
+            "amarillo"
+        ],
+        "size": "grande",
+        "stock": 9,
+        "delivery": true,
+        "rating": 4.9
+    },
+    {
+        "id": 12,
+        "name": "Jardín de Sueños",
+        "price": 95.00,
+        "description": "Arreglo premium con peonías, rosas gardenia y clematis en tonos pastel",
+        "image": "https://images.unsplash.com/photo-1519378058457-4c29a0a2efac",
+        "category": "exclusivos",
+        "featured": true,
+        "colors": [
+            "rosa claro",
+            "lavanda",
+            "crema"
+        ],
+        "size": "extra grande",
+        "stock": 2,
+        "delivery": true,
+        "rating": 5.0
+    }
+]

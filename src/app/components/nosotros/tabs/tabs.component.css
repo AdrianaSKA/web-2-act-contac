@@ -1,0 +1,187 @@
+.about-tabs {
+    padding: 5rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+}
+
+.tab-buttons button {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #666;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.tab-buttons button:hover {
+    color: #d4af37;
+}
+
+.tab-buttons button.active {
+    color: #d4af37;
+    font-weight: bold;
+}
+
+.tab-buttons button.active::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #d4af37;
+}
+
+.tab-content {
+    min-height: 400px;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.text-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-weight: 300;
+}
+
+.text-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.image-content img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.philosophy-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.philosophy-card {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.philosophy-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.icon-wrapper {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    background: linear-gradient(135deg, #f9f9f9, #fff);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    color: #d4af37;
+    font-size: 2rem;
+}
+
+.philosophy-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.team-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-image {
+    height: 300px;
+    overflow: hidden;
+}
+
+.team-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.team-card:hover .team-image img {
+    transform: scale(1.05);
+}
+
+.team-info {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.team-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.role {
+    color: #d4af37;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.bio {
+    color: #666;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .history-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .image-content {
+        order: -1;
+    }
+}
