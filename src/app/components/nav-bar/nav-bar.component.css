@@ -92,6 +92,11 @@
   background-color: rgba(212, 175, 55, 0.1);
 }
 
+.buttom{
+  color: aliceblue;
+  background-color: crimson;
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 0 1rem;

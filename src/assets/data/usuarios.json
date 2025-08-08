@@ -1,0 +1,13 @@
+{
+  "usuarios": [
+    {
+      "id": "cf96",
+      "nombre": "s",
+      "direccion": "s",
+      "fechaNacimiento": "2025-07-31",
+      "profesion": "sasas",
+      "correo": "asas@gmail.com",
+      "password": "123456"
+    }
+  ]
+}
