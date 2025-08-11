@@ -14,11 +14,19 @@ export class AutenticacionService {
 
 
   login(usuario: string, password: string): Observable<boolean> {
-    return this.http.get<any[]>(`${this.apiUrl}?nombre=${usuario}&password=${password}`)
+    return this.http.get<{ [key: string]: any }>(`${this.apiUrl}`)
       .pipe(
-        map(usuarios => {
-          if (usuarios.length > 0) {
-            localStorage.setItem('usuarioLogueado', JSON.stringify(usuarios[0]));
+        map(usuariosObj => {
+          if (!usuariosObj) return false;
+
+          const usuarios = Object.values(usuariosObj);
+
+          const usuarioEncontrado = usuarios.find(u =>
+            u.nombre === usuario && u.password === password
+          );
+
+          if (usuarioEncontrado) {
+            localStorage.setItem('user', JSON.stringify(usuarioEncontrado));
             return true;
           } else {
             return false;

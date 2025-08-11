@@ -8,6 +8,14 @@
       "profesion": "sasas",
       "correo": "asas@gmail.com",
       "password": "123456"
+    },
+    {
+      "id": "6ebf",
+      "nombre": "Henry",
+      "direccion": "Central",
+      "fechaNacimiento": "2025-08-01",
+      "correo": "henry@gmail.com",
+      "password": "123456"
     }
   ]
 }

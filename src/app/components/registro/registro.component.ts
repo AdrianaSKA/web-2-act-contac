@@ -22,7 +22,6 @@ export class RegistroComponent {
     nombre: ['', Validators.required],
     direccion: ['', Validators.required],
     fechaNacimiento: ['', Validators.required],
-    profesion: ['', Validators.required],
     correo: ['', [Validators.required, Validators.email]],
     password: ['', [Validators.required, Validators.minLength(6), Validators.maxLength(10)]]
   });

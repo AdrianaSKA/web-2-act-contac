@@ -17,16 +17,17 @@ export class LoginComponent {
   error: string = '';
 
   constructor(private authServicio: AutenticacionService, private router: Router) { }
+
   login = () => {
-    const sesionExitosa = this.authServicio.login(this.usuario, this.password);
-    if (sesionExitosa) {
-      const redireccion = localStorage.getItem('redirectUrl') || '/empleados';
-      localStorage.removeItem('redirectUrl');
-      this.router.navigateByUrl(redireccion);
-    }else{
-      this.error = 'Error al iniciar Secion';
+    this.authServicio.login(this.usuario, this.password).subscribe(sesionExitosa => {
+      if (sesionExitosa) {
+        const redireccion = localStorage.getItem('redirectUrl') || '/empleados';
+        localStorage.removeItem('redirectUrl');
+        this.router.navigateByUrl(redireccion);
+      } else {
+        this.error = 'Error al iniciar sesión';
+      }
+    });
   }
-
 }
 
-}

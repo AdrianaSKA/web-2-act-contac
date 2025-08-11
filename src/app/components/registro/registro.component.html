@@ -30,15 +30,6 @@
             </div>
 
             <div class="form-field">
-                <input formControlName="profesion" type="text" id="profesion" class="form-input-underline"
-                    placeholder=" " required />
-                <label for="profesion" class="floating-label">Profesión</label>
-                @if (registroForm.get('profesion')?.invalid && registroForm.get('profesion')?.touched) {
-                <span class="error-text">La profesión es obligatoria</span>
-                }
-            </div>
-
-            <div class="form-field">
                 <input formControlName="correo" type="email" id="correo" class="form-input-underline" placeholder=" "
                     required />
                 <label for="correo" class="floating-label">Correo electrónico</label>
